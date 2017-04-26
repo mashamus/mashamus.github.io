@@ -1,46 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
-
-  <link rel="stylesheet" href="style.css" type="text/css">
-
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;</title>
-
-
+<title>Page Title</title>
 </head>
 
-
 <body>
-
-<ul>
-
-  <li><a href="index.html">Home</a></li>
-   <li><a href="firebase.html">Firebase</a></li>
-
-  <li><a href="html.html">HTML</a></li>
-
-  <li><a href="javascript.html">JAVA SCRIPT</a>
-    <ul>
-
-      <li><a href="zad1.html">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;1</a></li>
-
-      <li><a href="zad2.html">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;2</a></li>
-
-      <li><a href="zad3.html">&#1047;&#1072;&#1076;&#1072;&#1095;&#1072;3</a></li>
-
-    </ul>
-
-  </li>
-
-  <li><a href="css.html">CSS</a></li>
-
-</ul>
-
-<br>
-
-<p>&#1087;&#1080;&#1091;</p>
-  
 <style>
 
 p0 {font-size: 4em; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: #ddcca3;}
@@ -75,16 +39,17 @@ a.button15:active {
   box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
 </style>
+
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyA1T923HGD1LF-q5OqPz26t53kECGtVefQ",
-    authDomain: "privatparty-32a4e.firebaseapp.com",
-    databaseURL: "https://privatparty-32a4e.firebaseio.com",
-    projectId: "privatparty-32a4e",
-    storageBucket: "privatparty-32a4e.appspot.com",
-    messagingSenderId: "943104094146"
+    apiKey: "AIzaSyBk8Vr7vPO2Oji0ZA3WRKUa4d0SWOkrecw",
+    authDomain: "guys-5f710.firebaseapp.com",
+    databaseURL: "https://guys-5f710.firebaseio.com",
+    projectId: "guys-5f710",
+    storageBucket: "guys-5f710.appspot.com",
+    messagingSenderId: "789514706341"
   };
   firebase.initializeApp(config);
 </script>
@@ -109,7 +74,7 @@ function er1 (){
 
 var yourSelect = document.getElementById( "to1" );
 e= yourSelect.options[ yourSelect.selectedIndex ].value;
-var a = firebase.database().ref('/Privatparty');
+var a = firebase.database().ref('/guys');
 a.on('value', function(snapshot) {
 var snap = snapshot.val();
 var g 
@@ -124,7 +89,8 @@ g= snap[e];
 <br>
 <a href="#on" class="button15" onclick="er1()" >PushMe</a>
 <br>
-
-
+<br>
 </body>
 </html>
+
+
