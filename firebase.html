@@ -80,19 +80,20 @@ a.button15:active {
 }
 </style>
 
-<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBk8Vr7vPO2Oji0ZA3WRKUa4d0SWOkrecw",
-    authDomain: "guys-5f710.firebaseapp.com",
-    databaseURL: "https://guys-5f710.firebaseio.com",
-    projectId: "guys-5f710",
-    storageBucket: "guys-5f710.appspot.com",
-    messagingSenderId: "789514706341"
+    apiKey: "AIzaSyA1T923HGD1LF-q5OqPz26t53kECGtVefQ",
+    authDomain: "privatparty-32a4e.firebaseapp.com",
+    databaseURL: "https://privatparty-32a4e.firebaseio.com",
+    projectId: "privatparty-32a4e",
+    storageBucket: "privatparty-32a4e.appspot.com",
+    messagingSenderId: "943104094146"
   };
   firebase.initializeApp(config);
 </script>
+
 <br>
  Надпись
  
@@ -114,7 +115,7 @@ function er1 (){
 
 var yourSelect = document.getElementById( "to1" );
 e= yourSelect.options[ yourSelect.selectedIndex ].value;
-var a = firebase.database().ref('/guys');
+var a = firebase.database().ref('/');
 a.on('value', function(snapshot) {
 var snap = snapshot.val();
 var g 
